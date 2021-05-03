@@ -1,0 +1,19 @@
+<form action="/clients/update/<%= id %>" method="POST">
+    <div class="mb-3">
+      <label for="inputFirstName" class="form-label">Primer Nombre</label>
+      <input type="text" name="first_name" class="form-control" id="inputFirstName">
+    </div>
+    <div class="mb-3">
+      <label for="inputLastName" class="form-label">Apellido</label>
+      <input type="text" name="last_name" class="form-control" id="inputLastName">
+    </div>
+    <div class="mb-3">
+      <label for="inputEmail" class="form-label">Email</label>
+      <input class="form-control" name="email" id="inputEmail" rows="3"></input>
+    </div>
+    <div class="mb-3">
+      <label for="inputTel" class="form-label">Teléfono</label>
+      <input class="form-control" name="telephone" id="inputTel" rows="3"></input>
+    </div>
+    <button type="submit" class="btn btn-primary">Actualizar</button>
+</form>

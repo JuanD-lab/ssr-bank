@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/header'); -%>
+<body>
+    <div class="container">
+        <h1>Cuentas Registradas</h1>
+    </div>
+    
+    <div class="d-flex" id="content-wrapper">
+        
+        <!-- Sidebar -->
+        <%- include('partials/sidebar'); -%>
+        <!-- Fin sidebar -->
+        
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="w-100 bg-light-blue">
+            <div id="content" class="container-fluid p-5 pt-1">
+                <section class="py-3">   
+                    <%- include('partials/accounts_table'); -%>       
+                </section>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Fin Page Content -->
+    <%- include('partials/footer'); -%>
+</body>
+</html>

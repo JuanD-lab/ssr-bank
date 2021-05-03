@@ -1,0 +1,27 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th colspan="2"><small class="font-weight-bold">Usuarios<small></th>
+        <th scope="col"><small class="font-weight-bold">Estatus<small></th>
+        <th scope="col"><small class="font-weight-bold">Configuración<small></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% clients.forEach( (client) => { %>
+        <tr class="shadow-sm">
+            <td><img src="https://pngimg.com/uploads/face/face_PNG11761.png" width="100px" class="img-fluid rounded-circle avatar"
+                alt="https://generated.photos/" /></td>
+            <td>
+                <span class="d-block"><%= client.first_name %> <%= client.last_name %></span>
+                <span class="d-block"><small class="text-muted"><%= client.email %></small></span>
+                <small class="text-muted"><%= client.telephone %></small>
+            </td>
+            <td class="align-middle"><span class="badge badge-primary text-primary">Activo</span></td>
+            <td class="align-middle">
+                <a href="/client_update/<%= client.id %>" class="text-warning mr-4"> Editar </a>
+                <a href="/clients/delete/<%= client.id %>" class=" text-danger ml-4"> Eliminar </a>
+            </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
